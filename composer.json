@@ -1,0 +1,33 @@
+{
+  "name": "kosov/yii2-fns-check",
+  "description": "Интеграция PHP клиента API ФНС для работы с онлайн-чеками с фреймворком Yii",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "keywords": [
+    "yii2",
+    "fns",
+    "ФНС",
+    "api",
+    "онлайн-чеки",
+    "проверка чеков"
+  ],
+  "authors": [
+    {
+      "name": "kosov",
+      "email": "akosov@yandex.ru"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "kosov/fns-check": "^1.0"
+  },
+  "require-dev": {
+    "php-http/curl-client": "^1.7",
+    "guzzlehttp/psr7": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yii\\fnscheck\\": ""
+    }
+  }
+}
