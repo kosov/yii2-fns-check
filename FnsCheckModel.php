@@ -38,4 +38,14 @@ abstract class FnsCheckModel extends BaseObject
     {
         return (array) $this;
     }
+
+    /**
+     * Возвращает хеш модели.
+     *
+     * @return string
+     */
+    public function getHash()
+    {
+        return md5(json_encode($this->getAttributes()));
+    }
 }
