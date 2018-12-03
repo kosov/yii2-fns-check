@@ -7,7 +7,7 @@ use yii\base\BaseObject;
 /**
  * Class FnsCheckModel
  *
- * Класс базовой модели.
+ * Базовый класс модели.
  *
  * @package yii\fnscheck
  * @author kosov <akosov@yandex.ru>

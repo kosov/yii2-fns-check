@@ -26,9 +26,15 @@
     "php-http/curl-client": "^1.7",
     "guzzlehttp/psr7": "^1.0"
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
   "autoload": {
     "psr-4": {
-      "yii\\fnscheck\\": ""
+      "yii\\fnscheck\\": "src"
     }
   }
 }

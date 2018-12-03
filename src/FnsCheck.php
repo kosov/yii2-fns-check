@@ -11,7 +11,7 @@ use FnsCheck\FnsCheckAuth;
 use FnsCheck\FnsCheckHelper;
 use Http\Client\HttpClient;
 use yii\base\Component;
-use yii\base\Exception;
+use yii\base\InvalidConfigException;
 
 /**
  * Class FnsCheck
@@ -60,18 +60,18 @@ class FnsCheck extends Component
 
     /**
      * Инициализация компонента.
+     *
+     * @throws InvalidConfigException Если указан некорректный HTTP-клиент
      */
     public function init()
     {
-        parent::init();
-
         if (!is_null($this->httpClient)) {
             if (class_exists($this->httpClient)) {
                 $this->httpClient = new $this->httpClient();
             }
 
             if (!$this->httpClient instanceof HttpClient) {
-                throw new Exception('Invalid HTTP client.');
+                throw new InvalidConfigException('Invalid HTTP client.');
             }
         }
 
@@ -80,6 +80,8 @@ class FnsCheck extends Component
     }
 
     /**
+     * Выполняет запрос на регистрацию нового пользователя.
+     *
      * @param Signup $signup Модель данных запроса регистрации пользователя
      *
      * @return \FnsCheck\response\SignupResponse
@@ -90,6 +92,8 @@ class FnsCheck extends Component
     }
 
     /**
+     * Выполняет запрос на авторизацию пользователя.
+     *
      * @return \FnsCheck\response\LoginResponse
      */
     public function login()
@@ -98,6 +102,8 @@ class FnsCheck extends Component
     }
 
     /**
+     * Выполняет запрос на восстановление пароля пользователя.
+     *
      * @param Restore $restore Модель данных запроса восстановления пароля пользователя
      *
      * @return \FnsCheck\response\RestoreResponse
@@ -108,6 +114,8 @@ class FnsCheck extends Component
     }
 
     /**
+     * Выполняет запрос на получение детальной информации по чеку.
+     *
      * @param CheckDetail $checkDetail Модель данных запроса на получение детальной информации по чеку
      *
      * @return \FnsCheck\response\CheckDetailResponse
@@ -118,6 +126,8 @@ class FnsCheck extends Component
     }
 
     /**
+     * Выполняет запрос на проверку существования чека.
+     *
      * @param CheckExist $checkExist Модель данных запроса проверки существования чека
      *
      * @return \FnsCheck\response\CheckExistResponse
