@@ -6,9 +6,9 @@ use kosov\yii\fnscheck\models\CheckDetail;
 use kosov\yii\fnscheck\models\CheckExist;
 use kosov\yii\fnscheck\models\Restore;
 use kosov\yii\fnscheck\models\Signup;
-use FnsCheck\FnsCheckApi;
-use FnsCheck\FnsCheckAuth;
-use FnsCheck\FnsCheckHelper;
+use kosov\fnscheck\FnsCheckApi;
+use kosov\fnscheck\FnsCheckAuth;
+use kosov\fnscheck\FnsCheckHelper;
 use Http\Client\HttpClient;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
@@ -84,7 +84,7 @@ class FnsCheck extends Component
      *
      * @param Signup $signup Модель данных запроса регистрации пользователя
      *
-     * @return \FnsCheck\response\SignupResponse
+     * @return \kosov\fnscheck\response\SignupResponse
      */
     public function signup(Signup $signup)
     {
@@ -94,7 +94,7 @@ class FnsCheck extends Component
     /**
      * Выполняет запрос на авторизацию пользователя.
      *
-     * @return \FnsCheck\response\LoginResponse
+     * @return \kosov\fnscheck\response\LoginResponse
      */
     public function login()
     {
@@ -106,7 +106,7 @@ class FnsCheck extends Component
      *
      * @param Restore $restore Модель данных запроса восстановления пароля пользователя
      *
-     * @return \FnsCheck\response\RestoreResponse
+     * @return \kosov\fnscheck\response\RestoreResponse
      */
     public function restore(Restore $restore)
     {
@@ -118,7 +118,7 @@ class FnsCheck extends Component
      *
      * @param CheckDetail $checkDetail Модель данных запроса на получение детальной информации по чеку
      *
-     * @return \FnsCheck\response\CheckDetailResponse
+     * @return \kosov\fnscheck\response\CheckDetailResponse
      */
     public function getCheckDetail(CheckDetail $checkDetail)
     {
@@ -130,7 +130,7 @@ class FnsCheck extends Component
      *
      * @param CheckExist $checkExist Модель данных запроса проверки существования чека
      *
-     * @return \FnsCheck\response\CheckExistResponse
+     * @return \kosov\fnscheck\response\CheckExistResponse
      */
     public function getCheckExist(CheckExist $checkExist)
     {

@@ -22,6 +22,9 @@
     "yiisoft/yii2": "~2.0.0",
     "kosov/fns-check": "^1.0"
   },
+  "provide": {
+    "php-http/client-implementation": "^1.0"
+  },
   "repositories": [
     {
       "type": "composer",
