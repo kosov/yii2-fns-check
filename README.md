@@ -22,7 +22,7 @@ composer require --prefer-dist kosov/yii2-fns-check:"~1.0.0"
 в директории своего проекта или добавьте
 
 ```json
-"kosov/yii2-fns-check": "~1.0.0"
+"kosov/yii2-fns-check": "~1.1.0"
 ```
 
 в секцию `require` файла `composer.json` вашего проекта.
