@@ -22,10 +22,6 @@
     "yiisoft/yii2": "~2.0.0",
     "kosov/fns-check": "^1.0"
   },
-  "require-dev": {
-    "php-http/curl-client": "^1.7",
-    "guzzlehttp/psr7": "^1.0"
-  },
   "repositories": [
     {
       "type": "composer",
@@ -34,7 +30,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "yii\\fnscheck\\": "src"
+      "kosov\\yii\\fnscheck\\": "src"
     }
   }
 }

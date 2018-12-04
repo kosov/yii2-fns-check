@@ -1,15 +1,15 @@
 <?php
 
-namespace yii\fnscheck\models;
+namespace kosov\yii\fnscheck\models;
 
-use yii\fnscheck\FnsCheckModel;
+use kosov\yii\fnscheck\FnsCheckModel;
 
 /**
  * Class CheckExist
  *
  * Модель данных запроса проверки существования чека.
  *
- * @package yii\fnscheck\models
+ * @package kosov\yii\fnscheck\models
  * @author kosov <akosov@yandex.ru>
  */
 class CheckExist extends FnsCheckModel

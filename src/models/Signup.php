@@ -1,15 +1,15 @@
 <?php
 
-namespace yii\fnscheck\models;
+namespace kosov\yii\fnscheck\models;
 
-use yii\fnscheck\FnsCheckModel;
+use kosov\yii\fnscheck\FnsCheckModel;
 
 /**
  * Class Signup
  *
  * Модель данных запроса регистрации пользователя.
  *
- * @package yii\fnscheck\models
+ * @package kosov\yii\fnscheck\models
  * @author kosov <akosov@yandex.ru>
  */
 class Signup extends FnsCheckModel

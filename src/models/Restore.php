@@ -1,15 +1,15 @@
 <?php
 
-namespace yii\fnscheck\models;
+namespace kosov\yii\fnscheck\models;
 
-use yii\fnscheck\FnsCheckModel;
+use kosov\yii\fnscheck\FnsCheckModel;
 
 /**
  * Class Restore
  *
  * Модель данных запроса восстановления пароля пользователя.
  *
- * @package yii\fnscheck\models
+ * @package kosov\yii\fnscheck\models
  * @author kosov <akosov@yandex.ru>
  */
 class Restore extends FnsCheckModel

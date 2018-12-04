@@ -1,6 +1,6 @@
 <?php
 
-namespace yii\fnscheck;
+namespace kosov\yii\fnscheck;
 
 use yii\base\BaseObject;
 
@@ -9,7 +9,7 @@ use yii\base\BaseObject;
  *
  * Базовый класс модели.
  *
- * @package yii\fnscheck
+ * @package kosov\yii\fnscheck
  * @author kosov <akosov@yandex.ru>
  */
 abstract class FnsCheckModel extends BaseObject

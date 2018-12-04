@@ -1,11 +1,11 @@
 <?php
 
-namespace yii\fnscheck;
+namespace kosov\yii\fnscheck;
 
-use yii\fnscheck\models\CheckDetail;
-use yii\fnscheck\models\CheckExist;
-use yii\fnscheck\models\Restore;
-use yii\fnscheck\models\Signup;
+use kosov\yii\fnscheck\models\CheckDetail;
+use kosov\yii\fnscheck\models\CheckExist;
+use kosov\yii\fnscheck\models\Restore;
+use kosov\yii\fnscheck\models\Signup;
 use FnsCheck\FnsCheckApi;
 use FnsCheck\FnsCheckAuth;
 use FnsCheck\FnsCheckHelper;
@@ -18,7 +18,7 @@ use yii\base\InvalidConfigException;
  *
  * Компонент для работы с онлайн-чеками.
  *
- * @package yii\fnscheck
+ * @package kosov\yii\fnscheck
  * @author kosov <akosov@yandex.ru>
  */
 class FnsCheck extends Component
