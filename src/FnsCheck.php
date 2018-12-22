@@ -85,6 +85,8 @@ class FnsCheck extends Component
      * @param Signup $signup Модель данных запроса регистрации пользователя
      *
      * @return \kosov\fnscheck\response\SignupResponse
+     *
+     * @throws \kosov\fnscheck\FnsCheckApiException
      */
     public function signup(Signup $signup)
     {
@@ -95,6 +97,8 @@ class FnsCheck extends Component
      * Выполняет запрос на авторизацию пользователя.
      *
      * @return \kosov\fnscheck\response\LoginResponse
+     *
+     * @throws \kosov\fnscheck\FnsCheckApiException
      */
     public function login()
     {
@@ -107,6 +111,8 @@ class FnsCheck extends Component
      * @param Restore $restore Модель данных запроса восстановления пароля пользователя
      *
      * @return \kosov\fnscheck\response\RestoreResponse
+     *
+     * @throws \kosov\fnscheck\FnsCheckApiException
      */
     public function restore(Restore $restore)
     {
@@ -119,6 +125,8 @@ class FnsCheck extends Component
      * @param CheckDetail $checkDetail Модель данных запроса на получение детальной информации по чеку
      *
      * @return \kosov\fnscheck\response\CheckDetailResponse
+     *
+     * @throws \kosov\fnscheck\FnsCheckApiException
      */
     public function getCheckDetail(CheckDetail $checkDetail)
     {
@@ -131,6 +139,8 @@ class FnsCheck extends Component
      * @param CheckExist $checkExist Модель данных запроса проверки существования чека
      *
      * @return \kosov\fnscheck\response\CheckExistResponse
+     *
+     * @throws \kosov\fnscheck\FnsCheckApiException
      */
     public function getCheckExist(CheckExist $checkExist)
     {
